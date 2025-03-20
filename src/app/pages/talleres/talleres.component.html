@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Talleres de Amepp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script> <!-- INVESTIGAR SI DEJARLO, ESTA IMPORTADO DESDE EL JASON -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+            <img class="logo" src="assets/images/logoadepp.PNG" alt="logo">
+            <a class="navbar-brand d-none" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav m-sm-auto">
+                    <li class="nav-item"> <a class="nav-link active d-none" aria-current="page" [routerLink]="['/home']"
+                            style="font-size: 20px;">Inicio</a> </li>
+                    <li class="nav-item"> <a class="nav-link" [routerLink]="['/beneficios']"
+                            style="font-size: 20px;">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/contacto']"
+                            style="font-size: 20px;">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/noticias']"
+                            style="font-size: 20px;">Noticias</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="font-size: 20px;">Servicios </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" [routerLink]="['/farmacias']"
+                                    style="font-size: 20px;">Farmacias</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['/opticas']" style="font-size: 20px;">Opticas</a>
+                            </li>
+                            <li><a class="dropdown-item" [routerLink]="['/talleres']" style="font-size: 20px;">Talleres</a>
+                            </li>
+                            <li><a class="dropdown-item" [routerLink]="['/viajes']" style="font-size: 20px;">Viajes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="card-group">
+
+        <div class="card">
+            <img src="/img/Talleres/tallerenpintura.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Descubre Tu Creatividad en el Taller de Pintura de Amepp</h5>
+                <p class="card-text">¿Te apasiona el arte? ¿Sueñas con expresarte a través de los colores y las formas?
+                    ¡Entonces nuestro Taller de Pintura es perfecto para ti!.</p>
+                <p class="card-text">¿Qué Ofrecemos?</p>
+                <li class="card-text">Explora las Técnicas: Desde el óleo hasta el acrílico, te sumergirás en un mundo
+                    de posibilidades. Aprenderás a manejar el pincel con destreza y a dar vida a tus ideas en el lienzo.
+                </li>
+                <li class="card-text">Libertad Creativa: Aquí no hay límites. Pinta lo que sientes, lo que ves, lo que
+                    imaginas. Nuestro taller es un espacio donde la creatividad fluye sin restricciones.</li>
+                <li class="card-text">Acompañamiento Personalizado: Nuestros instructores te guiarán en cada paso. Desde
+                    principiantes hasta artistas experimentados, todos son bienvenidos.</li>
+                <li class="card-text">Explora Más Allá: ¿Te interesa la escultura? ¿El dibujo? En Amepp, también puedes
+                    explorar otras disciplinas artísticas.</li>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <a href="/talleres.html" class="btn btn-primary">Participar</a>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <img src="/img/Talleres/porcelanaenfrio.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Técnica de Porcelana, la creatividad al máximo esplendor</h5>
+                <p class="card-text">¿Te animás? ¿para proyectos personales o una inversión?</p>
+                <p class="card-tex">El taller será impartido por la talentosa artista Nicole Figueroa, quien tiene una
+                    amplia experiencia en el campo de la porcelana</p>
+                <p class="card-text">Diseñado para personas de todas las edades y niveles de experiencia, desde
+                    principiantes hasta expertos. Los participantes tendrán la oportunidad de trabajar en un ambiente
+                    relajado y creativo, y de compartir ideas y técnicas con otros entusiastas de la porcelana.</p>
+                <p class="card-text">Si está interesado/a en participar en nuestro taller de porcelana, no dude en
+                    ponerse en contacto con nosotros para obtener más información. ¡Esperamos verlos pronto!</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <a href="/servicios.html" class="btn btn-primary">Participar</a>
+            </div>
+        </div>
+
+        <!--
+    <div class="card">
+      <img src="/img/viajes/termas.PNG" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Nuevo Paquete de viajes, descubre las Termas de Río Hondo con Rolsol</h5>
+        <p class="card-text">¿Por qué elegir nuestro paquete?.</p>
+        <li class="card-tex">Relajación y Bienestar: Las Termas de Río Hondo son famosas por sus aguas termales curativas. Sumérgete en la tranquilidad y rejuvenece cuerpo y mente.</li>
+        <li class="card-tex">Experiencia Única: Disfruta de uno de los centros termales y de spa más importantes de América Latina.</li>
+        <li class="card-tex">Variedad de Opciones: Desde tratamientos de spa hasta actividades al aire libre, hay algo para todos.</li>
+        
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+        <a href="/viajes.html" class="btn btn-primary">+ Viajes</a>
+      </div>
+      -->
+
+    </div>
+
+    <footer class="bg-light text-center">
+        <div class="container p-4 d-flex justify-content-around">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>9 de Julio 362 este, Capital, San Juan</p>
+                    <p>Correo electrónico: info"&#64;"example.com</p>
+                    <p>Teléfono: +01 234 567 88</p>
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <h5>Ubicación via maps</h5>
+                    <ul class="list-unstyled">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.34759632338!2d-68.52257672347275!3d-31.542073902340373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96816a9c19234ca5%3A0x1fb2eb11194a06bc!2s9%20de%20Julio%20Este%20362%2C%20J5402AMH%20San%20Juan!5e0!3m2!1ses!2sar!4v1699905145508!5m2!1ses!2sar"
+                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>© 2023 Derechos de autor: amepp.com.ar</p>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+
+</body>
+
+</html>

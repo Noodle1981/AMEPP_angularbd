@@ -1,0 +1,23 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <!-- Campo para el título -->
+    <div>
+      <label for="title">Título:</label>
+      <input id="title" type="text" formControlName="title">
+    </div>
+  
+    <!-- Campo para la imagen -->
+    <div>
+      <label for="image">Imagen:</label>
+      <input id="image" type="file" (change)="onFileSelected($event)" />
+    </div>
+  
+    <!-- Campo para el cuerpo del mensaje -->
+    <div>
+      <label for="body">Contenido:</label>
+      <textarea id="body" formControlName="body"></textarea>
+    </div>
+  
+    <!-- Botón para enviar -->
+    <button type="submit" [disabled]="form.invalid">Enviar</button>
+  </form>
+  

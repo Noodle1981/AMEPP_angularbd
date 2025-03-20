@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Noticias de Amepp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script> <!-- INVESTIGAR SI DEJARLO, ESTA IMPORTADO DESDE EL JASON -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+            <img class="logo" src="assets/images/logoadepp.PNG" alt="logo">
+            <a class="navbar-brand d-none" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav m-sm-auto">
+                    <li class="nav-item"> <a class="nav-link active d-none" aria-current="page" [routerLink]="['/home']"
+                            style="font-size: 20px;">Inicio</a> </li>
+                    <li class="nav-item"> <a class="nav-link" [routerLink]="['/beneficios']"
+                            style="font-size: 20px;">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/contacto']"
+                            style="font-size: 20px;">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/noticias']"
+                            style="font-size: 20px;">Noticias</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="font-size: 20px;">Servicios </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" [routerLink]="['/farmacias']"
+                                    style="font-size: 20px;">Farmacias</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['/opticas']" style="font-size: 20px;">Opticas</a>
+                            </li>
+                            <li><a class="dropdown-item" [routerLink]="['/talleres']" style="font-size: 20px;">Talleres</a>
+                            </li>
+                            <li><a class="dropdown-item" [routerLink]="['/viajes']" style="font-size: 20px;">Viajes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="noticias-list">
+      <h1>Noticias</h1>
+      <div *ngFor="let noticia of noticias" class="noticia">
+        <h2>{{ noticia.title }}</h2>
+        <img [src]="noticia.image" alt="Imagen de la noticia">
+        <p>{{ noticia.body }}</p>
+        <span>{{ noticia.created_at | date }}</span> <!-- Formatear fecha con pipe de Angular -->
+        <hr>
+      </div>
+    </section>
+
+
+  <div class="firsnotice">
+    <div class="row justify-content-center">
+
+      <div class="first card mb-3" style="width: 75%">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/img/Noticias/comision.jpg" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Nuevas Autoridades: Fuerza y Compromiso</h5>
+              <p class="card-text">En el mes de noviembre del 2023, nuestra comunidad de afiliados se reunió en una asamblea crucial para el futuro de la Mutual Amepp. En un ambiente de participación activa y compromiso, se votó por quórum a las nuevas autoridades de la Comisión Directiva.</p>
+              <p class="card-text">La lista liderada por la Docente Noelia Torres, que es la denominada "Fuerza y Compromiso", obtuvo el respaldo necesario de los afiliados directos, dando por sentado su visión de trabajo y dedicación hacia el bienestar de todos.</p>
+              <p class="card-text">La dirección de mutualidades de la Provincia de San Juan, evaluó los libros, actas, y memorias de la Mutual, resultando un veredicto claro, la Mutual Amepp está en regla, en condiciones para seguir vigente y cumplir su misión</p>
+              <p class="card-text">De esta manera, con el aval de la firma de nuestra autoridad, avanzaremos con proyectos urgentes y necesarios. Nuestra comunidad está unida y comprometira. ¡Sigamos construyendo juntos!</p>
+              <p class="card-text">Si tienes más preguntas o necesitas más detalles, no dudes en contactarnos.¡Gracias por ser parte de la Mutual Amepp!💪🤝 </p>
+              <p class="card-text"><small class="text-body-secondary">14/11/2023</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class="secondnotice">
+
+      <div class="row justify-content-center">
+
+        <div class="second card mb-3" style="width: 75%">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="/img/Talleres/Expo talleres .jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Feria Americana y Exposición de Talleres en Amepp</h5>
+                <p class="card-text">Bienvenidos a nuestra Feria Americana y Exposición de Talleres! En Amepp, nos enorgullece presentar una tarde llena de creatividad, entretenimiento y sorpresas para todos nuestros afiliados.</p>
+                <p class="card-text">Talleres: Explora los diversos talleres que ofrecemos: desde pintura hasta manualidades, pasando por danza y música y conoce a los talentosos instructores y descubre nuevas habilidades. </p>
+                <p class="card-text">Feria Americana: Encuentra tesoros y gangas en nuestra feria de artículos usados.¡Tu próximo hallazgo podría estar esperándote!</p>
+                <p class="card-text">Stands Invitados: Emprendedores locales presentarán sus productos y servicios.¡Descubre nuevas marcas y apoya a la comunidad!</p>
+                <p class="card-text">Sorteos y Premios: Participa en emocionantes sorteos con premios exclusivos. ¿Serás uno de los afortunados? </p>
+                <p class="card-text">Bar de Glitter y Maquillaje Artístico: Brilla con nuestro glitter bar y déjate maquillar con diseños creativos. ¡Prepárate para brillar toda la noche!</p>
+                <p class="card-text">¡Los esperamos en Amepp para compartir una tarde inolvidable!</p>
+                
+                <p class="card-text"><small class="text-body-secondary">14/11/2023</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <footer class="bg-light text-center">
+        <div class="container p-4 d-flex justify-content-around">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>9 de Julio 362 este, Capital, San Juan</p>
+                    <p>Correo electrónico: info"&#64;"example.com</p>
+                    <p>Teléfono: +01 234 567 88</p>
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <h5>Ubicación via maps</h5>
+                    <ul class="list-unstyled">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.34759632338!2d-68.52257672347275!3d-31.542073902340373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96816a9c19234ca5%3A0x1fb2eb11194a06bc!2s9%20de%20Julio%20Este%20362%2C%20J5402AMH%20San%20Juan!5e0!3m2!1ses!2sar!4v1699905145508!5m2!1ses!2sar"
+                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>© 2023 Derechos de autor: amepp.com.ar</p>
+            </div>
+        </div>
+    </footer>
+
+      
+
+</body>
+
+</html>

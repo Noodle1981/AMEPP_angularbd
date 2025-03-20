@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Amepp</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!--INVESTIGAR SI ES NECESARIO DEJARLO YA QUE IMPORTADO-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <!--INVESTIGAR SI ES NECESARIO DEJARLO YA QUE IMPORTADO-->  
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script> <!-- INVESTIGAR SI DEJARLO, ESTA IMPORTADO DESDE EL JASON -->
+    <nav class="navbar navbar-expand-sm bg-body-tertiary">
+        <div class="container-fluid">
+            <img class="logo" src="assets/images/logoadepp.PNG" alt="logo">
+            <a class="navbar-brand d-none" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav m-sm-auto">
+                    <li class="nav-item"> <a class="nav-link active d-none" aria-current="page" [routerLink]="['/home']"
+                            style="font-size: 20px;">Inicio</a> </li>
+                    <li class="nav-item"> <a class="nav-link" [routerLink]="['/beneficios']"
+                            style="font-size: 20px;">Beneficios</a></li>
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/contacto']"
+                            style="font-size: 20px;">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" [routerLink]="['/noticias']"
+                            style="font-size: 20px;">Noticias</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="font-size: 20px;">Servicios </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" [routerLink]="['/farmacias']"
+                                    style="font-size: 20px;">Farmacias</a></li>
+                            <li><a class="dropdown-item" [routerLink]="['/opticas']" style="font-size: 20px;">Opticas</a>
+                            </li>
+                            <li><a class="dropdown-item" [routerLink]="['/talleres']" style="font-size: 20px;">Talleres</a>
+                            </li>
+                            <li><a class="dropdown-item" [routerLink]="['/viajes']" style="font-size: 20px;">Viajes</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    
+    <div class="firsnotice">
+        <div class="row justify-content-center">
+            <div class="first card mb-3" style="width: 75%">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/images/comision.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Nuevas Autoridades: Fuerza y Compromiso</h5>
+                            <p class="card-text">En el mes de noviembre del 2023, nuestra comunidad de afiliados se
+                                reunió en una
+                                asamblea crucial para el futuro de la Mutual Amepp. En un ambiente de participación
+                                activa y compromiso,
+                                se votó por quórum a las nuevas autoridades de la Comisión Directiva.</p>
+                            <p class="card-text">La lista liderada por la Docente Noelia Torres, que es la denominada
+                                "Fuerza y
+                                Compromiso", obtuvo el respaldo necesario de los afiliados directos, dando por sentado
+                                su visión de
+                                trabajo y dedicación hacia el bienestar de todos.</p>
+                            <p class="card-text">La dirección de mutualidades de la Provincia de San Juan, evaluó los
+                                libros, actas, y
+                                memorias de la Mutual, resultando un veredicto claro, la Mutual Amepp está en regla, en
+                                condiciones para
+                                seguir vigente y cumplir su misión</p>
+                            <p class="card-text">De esta manera, con el aval de la firma de nuestra autoridad,
+                                avanzaremos con
+                                proyectos urgentes y necesarios. Nuestra comunidad está unida y comprometira. ¡Sigamos
+                                construyendo
+                                juntos!</p>
+                            <p class="card-text">Si tienes más preguntas o necesitas más detalles, no dudes en
+                                contactarnos.¡Gracias
+                                por ser parte de la Mutual Amepp!💪🤝 </p>
+                            <p class="card-text"><small class="text-body-secondary">14/11/2023</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="secondnotice">
+
+        <div class="row justify-content-center">
+
+            <div class="second card mb-3" style="width: 75%">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="assets/images/Talleres/Expo talleres .jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Feria Americana y Exposición de Talleres en Amepp</h5>
+                            <p class="card-text">Bienvenidos a nuestra Feria Americana y Exposición de Talleres! En
+                                Amepp, nos
+                                enorgullece presentar una tarde llena de creatividad, entretenimiento y sorpresas para
+                                todos nuestros
+                                afiliados.</p>
+                            <p class="card-text">Talleres: Explora los diversos talleres que ofrecemos: desde pintura
+                                hasta
+                                manualidades, pasando por danza y música y conoce a los talentosos instructores y
+                                descubre nuevas
+                                habilidades. </p>
+                            <p class="card-text">Feria Americana: Encuentra tesoros y gangas en nuestra feria de
+                                artículos usados.¡Tu
+                                próximo hallazgo podría estar esperándote!</p>
+                            <p class="card-text">Stands Invitados: Emprendedores locales presentarán sus productos y
+                                servicios.¡Descubre nuevas marcas y apoya a la comunidad!</p>
+                            <p class="card-text">Sorteos y Premios: Participa en emocionantes sorteos con premios
+                                exclusivos. ¿Serás
+                                uno de los afortunados? </p>
+                            <p class="card-text">Bar de Glitter y Maquillaje Artístico: Brilla con nuestro glitter bar y
+                                déjate
+                                maquillar con diseños creativos. ¡Prepárate para brillar toda la noche!</p>
+                            <p class="card-text">¡Los esperamos en Amepp para compartir una tarde inolvidable!</p>
+
+                            <p class="card-text"><small class="text-body-secondary">14/11/2023</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="card-group">
+        <div class="card">
+            <img src="assets/images/beneficios/credimax.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Credimax: Tu Socio Financiero en la Mutual Amepp</h5>
+                <p class="card-text">¿Necesitas un impulso financiero? ¿Un proyecto personal o una inversión esperan por
+                    ti?
+                    Credimax, nuestro servicio exclusivo de préstamos, está diseñado para afiliados como tú. Descubre
+                    por qué
+                    deberías considerarlo:</p>
+                <p class="card-text">¿Por qué elegir Credimax?</p>
+                <li class="card-tex">1. Préstamos Personalizados:</li>
+                <ul class="card-text">Montos Flexibles: Desde pequeñas necesidades hasta proyectos ambiciosos, tenemos
+                    opciones
+                    para todos.</ul>
+                <ul class="card-text">Tasas Competitivas: Disfruta de tasas preferenciales y condiciones favorables.
+                </ul>
+                <ul class="card-text">Rápida Aprobación: Simplificamos el proceso para que obtengas el dinero que
+                    necesitas sin
+                    demoras.</ul>
+                <li class="card-tex">2. Descuentos Directos en Cuotas:</li>
+                <ul class="card-text">Descuento Automático: La cuota se descuenta directamente de tus haberes mensuales.
+                </ul>
+                <ul class="card-text">Sin Trámites Adicionales: No te preocupes por pagos manuales o vencimientos.</ul>
+                <li class="card-tex">3. Beneficios Exclusivos para Afiliados:</li>
+                <ul class="card-text">Flexibilidad de Plazos: Elige el período de devolución que mejor se adapte a tus
+                    circunstancias.</ul>
+                <ul class="card-text">Confidencialidad y Seguridad: Trabajamos con profesionalismo y respeto por tu
+                    privacidad.
+                </ul>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <a href="/servicios.html" class="btn btn-primary">+ Servicios</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/Talleres/tallerenpintura.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Descubre Tu Creatividad en el Taller de Pintura de Amepp</h5>
+                <p class="card-text">¿Te apasiona el arte? ¿Sueñas con expresarte a través de los colores y las formas?
+                    ¡Entonces nuestro Taller de Pintura es perfecto para ti!.</p>
+                <p class="card-text">¿Qué Ofrecemos?</p>
+                <li class="card-text">Explora las Técnicas: Desde el óleo hasta el acrílico, te sumergirás en un mundo
+                    de
+                    posibilidades. Aprenderás a manejar el pincel con destreza y a dar vida a tus ideas en el lienzo.
+                </li>
+                <li class="card-text">Libertad Creativa: Aquí no hay límites. Pinta lo que sientes, lo que ves, lo que
+                    imaginas.
+                    Nuestro taller es un espacio donde la creatividad fluye sin restricciones.</li>
+                <li class="card-text">Acompañamiento Personalizado: Nuestros instructores te guiarán en cada paso. Desde
+                    principiantes hasta artistas experimentados, todos son bienvenidos.</li>
+                <li class="card-text">Explora Más Allá: ¿Te interesa la escultura? ¿El dibujo? En Amepp, también puedes
+                    explorar
+                    otras disciplinas artísticas.</li>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <a href="/talleres.html" class="btn btn-primary">+ Talleres</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/viajes/termaschico.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Nuevo Paquete de viajes, descubre las Termas de Río Hondo con Rolsol</h5>
+                <p class="card-text">¿Por qué elegir nuestro paquete?.</p>
+                <li class="card-tex">Relajación y Bienestar: Las Termas de Río Hondo son famosas por sus aguas termales
+                    curativas. Sumérgete en la tranquilidad y rejuvenece cuerpo y mente.</li>
+                <li class="card-tex">Experiencia Única: Disfruta de uno de los centros termales y de spa más importantes
+                    de
+                    América Latina.</li>
+                <li class="card-tex">Variedad de Opciones: Desde tratamientos de spa hasta actividades al aire libre,
+                    hay algo
+                    para todos.</li>
+
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <a href="/viajes.html" class="btn btn-primary">+ Viajes</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card-group">
+        <div class="card">
+            <img src="assets/images/opticas/neovision.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Optica Neovision: Tu Socio Financiero en la Mutual Amepp</h5>
+                <p class="card-text">¿Necesitas un impulso financiero? ¿Un proyecto personal o una inversión esperan por
+                    ti?
+                    Credimax, nuestro servicio exclusivo de préstamos, está diseñado para afiliados como tú. Descubre
+                    por qué
+                    deberías considerarlo:</p>
+                <p class="card-text">¿Por qué elegir Credimax?</p>
+                <li class="card-tex">1. Préstamos Personalizados:</li>
+                <ul class="card-text">Montos Flexibles: Desde pequeñas necesidades hasta proyectos ambiciosos, tenemos
+                    opciones
+                    para todos.</ul>
+                <ul class="card-text">Tasas Competitivas: Disfruta de tasas preferenciales y condiciones favorables.
+                </ul>
+                <ul class="card-text">Rápida Aprobación: Simplificamos el proceso para que obtengas el dinero que
+                    necesitas sin
+                    demoras.</ul>
+                <li class="card-tex">2. Descuentos Directos en Cuotas:</li>
+                <ul class="card-text">Descuento Automático: La cuota se descuenta directamente de tus haberes mensuales.
+                </ul>
+                <ul class="card-text">Sin Trámites Adicionales: No te preocupes por pagos manuales o vencimientos.</ul>
+                <li class="card-tex">3. Beneficios Exclusivos para Afiliados:</li>
+                <ul class="card-text">Flexibilidad de Plazos: Elige el período de devolución que mejor se adapte a tus
+                    circunstancias.</ul>
+                <ul class="card-text">Confidencialidad y Seguridad: Trabajamos con profesionalismo y respeto por tu
+                    privacidad.
+                </ul>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <a href="/opticas.html" class="btn btn-primary">+ Servicios</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/farmacias/farmadis.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Farmadis</h5>
+                <p class="card-text">¿Te apasiona el arte? ¿Sueñas con expresarte a través de los colores y las formas?
+                    ¡Entonces nuestro Taller de Pintura es perfecto para ti!.</p>
+                <p class="card-text">¿Qué Ofrecemos?</p>
+                <li class="card-text">Explora las Técnicas: Desde el óleo hasta el acrílico, te sumergirás en un mundo
+                    de
+                    posibilidades. Aprenderás a manejar el pincel con destreza y a dar vida a tus ideas en el lienzo.
+                </li>
+                <li class="card-text">Libertad Creativa: Aquí no hay límites. Pinta lo que sientes, lo que ves, lo que
+                    imaginas.
+                    Nuestro taller es un espacio donde la creatividad fluye sin restricciones.</li>
+                <li class="card-text">Acompañamiento Personalizado: Nuestros instructores te guiarán en cada paso. Desde
+                    principiantes hasta artistas experimentados, todos son bienvenidos.</li>
+                <li class="card-text">Explora Más Allá: ¿Te interesa la escultura? ¿El dibujo? En Amepp, también puedes
+                    explorar
+                    otras disciplinas artísticas.</li>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <a href="/talleres.html" class="btn btn-primary">+ Talleres</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/Noticias/aumento.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Atención Socios Adherentes</h5>
+                <p class="card-text">Aumento de la Cuota societaria.</p>
+                <p class="card-tex">Se les comunica que a partir del mes de julio habrá un incremento, en el mondo de la
+                    cuota societaria, será de $1.500 pesos.</p>
+                <p class="card-tex">Esto se debe a la crisis economica que atravieza el país. Obligandonos a actualizar
+                    el valor de la cuota, además por la incorporación de servicios que pueden gozar todos los afiliados
+                </p>
+                <p class="card-text"><small class="text-body-secondary">25/07/2023</small></p>
+                <a href="/viajes.html" class="btn btn-primary">+ Viajes</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row justify-content-center">
+        <div class="col-sm-6">
+            <div class="unete card">
+                <div class="card-body">
+                    <h4 class="card-title text-center text-bg-info">Únete a la Mutual Amepp: Tu Socio en Bienestar</h4>
+                    <p class="card-text"> ¿Por qué elegir la Mutual Amepp?</p>
+                    <p class="card-text"> La Mutual Amepp es una comunidad sólida y comprometida que ofrece una amplia
+                        gama de
+                        beneficios para sus afiliados. Ya seas un empleado estatal o no estatal, aquí encontrarás
+                        razones
+                        convincentes para unirte:</p>
+                    <ul class="card-text">1. Servicios Exclusivos:</ul>
+                    <li class="card-text"> Viajes: Explora nuestra Argentina con nuestros paquetes turísticos diseñados
+                        especialmente para ti.</li>
+                    <li class="card-text">Descuentos en Comercios Adheridos: Ahorra dinero en tus compras diarias en una
+                        variedad
+                        de establecimientos.</li>
+                    <li class="card-text">Convenios con Entidades de Préstamos Personales: Accede a opciones de
+                        financiamiento con
+                        tasas preferenciales.</li>
+                    <li class="card-text">Beneficios en Ópticas y Farmacias: Cuida de tu salud visual y bienestar con
+                        descuentos
+                        en lentes y medicamentos.</li>
+                    <li class="card-text">Coseguro (Próximamente): Mayor tranquilidad para ti y tu familia en momentos
+                        de
+                        necesidad.</li>
+                    <br>
+                    <ul class="card-text">2.Talleres y Actividades:</ul>
+                    <li class="card-text">Talleres de Pintura: Despierta tu creatividad y relájate en nuestros talleres
+                        artísticos.</li>
+                    <li class="card-text">Charlas y Capacitaciones: Aprende sobre temas relevantes para tu vida personal
+                        y
+                        profesional.</li>
+                    <li class="card-text">Eventos Sociales: Conoce a otros afiliados y comparte experiencias en nuestras
+                        reuniones
+                        y celebraciones.</li>
+                    <br>
+                    <ul class="card-text">3.Solidaridad y Apoyo Mutuo:</ul>
+                    <li class="card-text">En la Mutual Amepp, no estás solo. Nos cuidamos mutuamente y enfrentamos los
+                        desafíos
+                        juntos.</li>
+                    <li class="card-text">Nuestra comunidad se basa en la ayuda recíproca, la confianza y la
+                        camaradería.</li>
+                    <br>
+                    <a href="/afiliarse.html" class="btn btn-primary">Afiliarse</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light text-center">
+        <div class="container p-4 d-flex justify-content-around">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>9 de Julio 362 este, Capital, San Juan</p>
+                    <p>Correo electrónico: info"&#64;"example.com</p>
+                    <p>Teléfono: +01 234 567 88</p>
+                    <h5>Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+                    <h5>Ubicación via maps</h5>
+                    <ul class="list-unstyled">
+                      <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3400.34759632338!2d-68.52257672347275!3d-31.542073902340373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96816a9c19234ca5%3A0x1fb2eb11194a06bc!2s9%20de%20Julio%20Este%20362%2C%20J5402AMH%20San%20Juan!5e0!3m2!1ses!2sar!4v1699905145508!5m2!1ses!2sar"
+                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>© 2023 Derechos de autor: amepp.com.ar</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+:root {
+    --color-naranja: #ff9c1a;
+    --color-turquesa: #0ba9e4;
+    --color-rosadofluo: #dc0c53;
+    --color-morado: #8a1066;
+    --color-lilaclaro: #734680;
+    --color-verdepasto: #a7c416;
+    --color-oscuro: #0000;
+
+
+
+}
+
+
+.logo {
+    border-radius: 25%;
+    box-shadow: 0 0 15px greenyellow;
+    width: 100px;
+    height: 100px;
+}
+
+
+.nav-link {
+    color: var(--color-morado);
+    transform:skew()
+}
+
+.nav-link:hover {
+    color: var(--color-naranja);
+}
+
+.dropdown-item {
+    color: var(--color-morado);
+}
+
+.dropdown-item {
+    color: var(--color-naranja);
+}
+
+/*INICIO*/
+.card {
+    background-color: var(--color-verdepasto);
+    padding: 1%;
+    margin: 1%;
+}
+
+.card-title {
+    color: var(--color-lilaclaro);
+}
+
+.btn{
+    background-color: var(--color-turquesa);
+    color: black;
+    font-size: larger;
+}
+
+.firsnotice {
+    background-color: var(--color-lilaclaro);
+    
+}
+
+.first {
+    box-shadow: 0 0 15px var(--color-turquesa);
+}
+
+.secondnotice {
+    background-color: var(--color-lilaclaro);
+}
+
+.second {
+    box-shadow: 0 0 15px var(--color-turquesa); 
+}
+
+.card-group {
+    background-color: var(--color-turquesa);
+}
+
+
+.unete {
+
+    background-color: var(--color-morado);
+    color: beige;
+    box-shadow: 0 10px 30px var(--color-turquesa);
+}
+
+
+/*VIAJES*/
+.viajes {
+    display: flex;
+    justify-content: center;
+
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    width:min-content;
+    border-radius: 1em;
+    box-shadow: 0 0 15px var(--color-turquesa);
+}
+
+.col img {
+    height: 400px;
+}
+
+.bg {
+    background-color: violet;
+    color: brown;
+}
+
+/*FORMULARIO INSCRIPCION*/
+
+.formulariogrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+    
+}
+
+.formulario {
+    width: 70%;
+    margin-top: 1%;
+    padding: 5%;
+    border: 5px solid var(--color-rosadofluo);
+    box-shadow: 0 0 10px var(--color-verdepasto);
+}
+
+/*BENEFICIOS*/
+
+.beneficios {
+    background-color: var(--color-morado);
+}
+
+.beneficios .card {
+    background-color: var(--color-naranja);
+    box-shadow: 0 0 25px var(--color-oscuro);
+
+}
+
+footer {
+    background-color: white;
+}
+
+@media (min-width: 400px){
+
+    .propuestas {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        grid-auto-columns:auto;
+        gap: 10px;   
+    }
+}
+
+@media (min-width: 800px){
+
+    .propuestas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+    }}
+
+@media (min-width: 1000px){
+
+    .propuestas {
+        display: grid;
+        grid-template-columns: repeat(4, 1.5fr);
+        grid-auto-rows: auto;
+        gap: 10px;
+    }}
